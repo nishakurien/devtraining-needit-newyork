@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Custom Field - Time" max_length="32" name="custom_field_time" reference="alm_stockroom" type="reference"/>
+        <element label="Age" mandatory="true" max_length="40" name="u_age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Chocolate" max_length="40" name="u_chocolate" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Hersheys" sequence="0" value="hersheys"/>
+                <element inactive_on_update="false" label="Cadbury" sequence="1" value="cadbury"/>
+                <element inactive_on_update="false" label="Ferror Rocher" sequence="2" value="ferror rocher"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Log Details" max_length="40" name="u_log_details" type="string"/>
+    </element>
+</database>
